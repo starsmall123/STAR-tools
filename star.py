@@ -41,5 +41,8 @@ class AHtml:
     def make_a_normal_text(self,text):
         self.body += '''        <p>%s</p>
         '''%text
-        
+    def make_a_img(self,img):
+        self.body +='''         <img src=%s>
+        '''%img        
+
 
