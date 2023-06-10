@@ -44,5 +44,9 @@ class AHtml:
     def make_a_img(self,img):
         self.body +='''         <img src=%s>
         '''%img        
+    def make_a_text_link(self,text,page,text_king='p'):
+        self.body +=f'''         <a href="{page}">
+                                    <{text_king}>{text}</{text_king}>
+                                </a>
 
 
